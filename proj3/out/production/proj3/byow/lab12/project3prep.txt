@@ -1,0 +1,36 @@
+Q: Can you think of an analogy between the process of tesselating hexagons and randomly generating a world using rooms and hallways? 
+What is the hexagon and what is the tesselation on the Project 3 side?
+
+A: Tesselating hexagons is like putting together floor and wall tiles to create rooms and connect those rooms together with hallways.
+The hexagons are the individual floor or wall tiles, and tesselation is the act of arranging them together.
+
+-----
+Q: If you were to start working on world generation, what kind of method would you think of writing first? 
+Think back to the lab and the process used to eventually get to tesselating hexagons.
+
+A: Probably a position finder helper method to make the process of knowing where to put each tile and each
+subsequent tile after that easier.
+
+-----
+Q: What distinguishes a hallway from a room? How are they similar?
+
+A: A hallway is narrower and longer than a room, usually only one walkable space/floor tile wide.
+They are similar in that both consist of floor tiles that are completely flanked/surrounded by walls.
+
+-----
+Q: For tesselating hexagons, one of the hardest parts is figuring out where to place each hexagon/how to easily place hexagons on screen in an algorithmic way. 
+After looking at your own implemention, consider the implementation provided near the end of the lab. 
+How did your implementation differ from the given one? What lessons can be learned from it?
+
+A: My implementation differed from the given solution in that I did not utilize as much abstraction. I had less methods,
+each of which performed more tasks. In addition, the order in which I added the hexagons was different. In the future, I should
+be sure to plan out my methods better so as to make the actual task of programming solutions easier.
+
+-----
+Q: Consider an algorithm for placing rooms and hallways on your map. 
+Ideally, consider many algorithms and think about what makes some easier or harder to implement. Try and bring those ideas together into a single simple algorithm which accomplishes the task. 
+In general, algorithms with as few edge cases as possible are better algorithms.
+
+A: I don't know any of the specifics on how rooms and hallways operate, but I could attempt to draw every room such that
+every room is connected to another room by way of a hallway, and every hallway connects one room to another. I could possibly make
+use of a weighted quick union to track connectivity.
